@@ -1,0 +1,91 @@
+import NetworkConfigInterface from './NetworkConfigInterface';
+
+/*
+ * Local networks
+ */
+export const hardhatLocal: NetworkConfigInterface = {
+  chainId: 31337,
+  symbol: 'ETH (test)',
+  blockExplorer: {
+    name: 'Block explorer (not available for local chains)',
+    generateContractUrl: (contractAddress: string) => `#`,
+    generateTransactionUrl: (transactionAddress: string) => `#`,
+  },
+}
+
+/*
+ * Ethereum
+ */
+export const ethereumTestnet: NetworkConfigInterface = {
+  chainId: 5,
+  symbol: 'ETH (test)',
+  blockExplorer: {
+    name: 'Etherscan (Goerli)',
+    generateContractUrl: (contractAddress: string) => `https://goerli.etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://goerli.etherscan.io/tx/${transactionAddress}`,
+  },
+}
+
+
+export const ethereumLegacyTestnet: NetworkConfigInterface = {
+  chainId: 11155111,
+  symbol: 'ETH (test)',
+  blockExplorer: {
+    name: 'Etherscan (Sepolia)',
+    generateContractUrl: (contractAddress: string) => `https://sepolia.etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://sepolia.etherscan.io/tx/${transactionAddress}`,
+  },
+}
+
+export const ethereumMainnet: NetworkConfigInterface = {
+  chainId: 1,
+  symbol: 'ETH',
+  blockExplorer: {
+    name: 'Etherscan',
+    generateContractUrl: (contractAddress: string) => `https://etherscan.io/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://etherscan.io/tx/${transactionAddress}`,
+  },
+}
+
+export const baseGoerliTestnet: NetworkConfigInterface = {
+  chainId: 84531,
+  symbol: 'ETH (test)',
+  blockExplorer: {
+    name: 'BaseScan (GoerliTestnet)',
+    generateContractUrl: (contractAddress: string) => `https://goerli.basescan.org/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://goerli.basescan.org/tx/${transactionAddress}`,
+  },
+}
+
+export const baseMainnet: NetworkConfigInterface = {
+  chainId: 8453,
+  symbol: 'ETH',
+  blockExplorer: {
+    name: 'BaseScan',
+    generateContractUrl: (contractAddress: string) => `https://basescan.org/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://basescan.org/tx/${transactionAddress}`,
+  },
+}
+
+/*
+ * Polygon
+ */
+export const polygonTestnet: NetworkConfigInterface = {
+  chainId: 80001,
+  symbol: 'MATIC (test)',
+  blockExplorer: {
+    name: 'Polygonscan (Mumbai)',
+    generateContractUrl: (contractAddress: string) => `https://mumbai.polygonscan.com/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://mumbai.polygonscan.com/tx/${transactionAddress}`,
+  },
+}
+
+export const polygonMainnet: NetworkConfigInterface = {
+  chainId: 137,
+  symbol: 'MATIC',
+  blockExplorer: {
+    name: 'Polygonscan',
+    generateContractUrl: (contractAddress: string) => `https://polygonscan.com/address/${contractAddress}`,
+    generateTransactionUrl: (transactionAddress: string) => `https://polygonscan.com/tx/${transactionAddress}`,
+  },
+}
