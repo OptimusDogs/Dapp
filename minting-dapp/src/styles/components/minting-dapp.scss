@@ -206,11 +206,18 @@
         @apply border-0;
       }
 
+      .decrease,.increase {
+        @apply text-xl bg-stone-500
+        
+      }
+
+
       .decrease,.increase, .mint-amount {
-        @apply border-r border-popups-internal_border text-lg bg-gray-200;
+        @apply border-r border-popups-internal_border;
 
       }
 
+      
       
 
       .mint-amount {
