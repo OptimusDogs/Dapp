@@ -206,9 +206,12 @@
         @apply border-0;
       }
 
-      .decrease, .mint-amount {
-        @apply border-r border-popups-internal_border;
+      .decrease,.increase, .mint-amount {
+        @apply border-r border-popups-internal_border text-lg bg-gray-200;
+
       }
+
+      
 
       .mint-amount {
         @apply flex items-center justify-center;
