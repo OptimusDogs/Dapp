@@ -79,7 +79,7 @@ module.exports = {
         },
 
         // Mint widget
-        token_preview: colors.violet[400],
+        token_preview: colors.violet[900],
       },
     },
   },
