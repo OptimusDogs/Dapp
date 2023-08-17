@@ -175,7 +175,7 @@
       @apply p-8;
 
       @apply bg-token_preview;
-      @apply brightness(0.6);
+      backdrop-filter: brightness(0.6);
       
       
       img {
