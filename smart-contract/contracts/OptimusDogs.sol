@@ -26,9 +26,9 @@ contract OptimusDogs is ERC721A, Ownable, ReentrancyGuard, ERC2981 {
     using Strings for uint256;
     
 
-    uint256 public MINT_PRICE = 0.04 ether; // Prezzo di mint per NFT
-    uint256 public WL_PRICE = 0.03 ether; // Prezzo WL di mint per NFT
-    uint256 public OG_PRICE = 0.026 ether; // Prezzo OG di mint per NFT
+    uint256 public MINT_PRICE = 0.04 ether; 
+    uint256 public WL_PRICE = 0.03 ether; 
+    uint256 public OG_PRICE = 0.026 ether; 
     uint256 public immutable maxPerAddressDuringMint;
     uint256 public immutable AmountforTeam;
     uint256 public immutable AmountForPublic;
@@ -106,7 +106,7 @@ contract OptimusDogs is ERC721A, Ownable, ReentrancyGuard, ERC2981 {
             _safeMint(msg.sender, maxBatchSize);
         }
         
-        remainingTeamMints -= amount; // Decrementa il numero di mints del team rimasti.
+        remainingTeamMints -= amount; 
         
     }
     
@@ -144,7 +144,7 @@ contract OptimusDogs is ERC721A, Ownable, ReentrancyGuard, ERC2981 {
         if (_mintedPerAddress[msg.sender] + amount > maxBatchSizeForWL) revert ExceedsMaxPerAddress();
         if (totalSupply() + amount > AmountForPublic) revert ExceedsMaxPerPublic();
 
-        _mintedPerAddress[msg.sender] += amount; // Aggiorna il numero di NFT mintati dall'indirizzo
+        _mintedPerAddress[msg.sender] += amount; 
 
         uint256 totalPrice = MINT_PRICE * amount ; 
         if (msg.value < totalPrice) revert InsufficientPayment();

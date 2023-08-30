@@ -134,9 +134,7 @@ const config: HardhatUserConfig = {
       polygon: process.env.BLOCK_EXPLORER_API_KEY,
       polygonMumbai: process.env.BLOCK_EXPLORER_API_KEY,
 
-      // Base
-      base: process.env.BLOCK_EXPLORER_API_KEY,
-      baseTestnet: process.env.BLOCK_EXPLORER_API_KEY,
+      
     },
   },
 };

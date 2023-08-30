@@ -19,8 +19,8 @@ const CollectionConfig: CollectionConfigInterface = {
   AmountForPublic: 9400,
   AmountforTeam: 600,
   
-  contractAddress:"0x5e771D03D3f606f2a5F9488833C4499fd2D227c9",
-  marketplaceIdentifier: 'my-nft-token',
+  contractAddress:"0x4c5CbB44F1F835E2BbE255d8dBFb91A364b0D36B",
+  marketplaceIdentifier: 'Optimus Dogs',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
   ogAddresses,

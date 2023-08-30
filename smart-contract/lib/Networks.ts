@@ -47,25 +47,9 @@ export const ethereumMainnet: NetworkConfigInterface = {
   },
 }
 
-export const baseGoerliTestnet: NetworkConfigInterface = {
-  chainId: 84531,
-  symbol: 'ETH (test)',
-  blockExplorer: {
-    name: 'BaseScan (GoerliTestnet)',
-    generateContractUrl: (contractAddress: string) => `https://goerli.basescan.org/address/${contractAddress}`,
-    generateTransactionUrl: (transactionAddress: string) => `https://goerli.basescan.org/tx/${transactionAddress}`,
-  },
-}
 
-export const baseMainnet: NetworkConfigInterface = {
-  chainId: 8453,
-  symbol: 'ETH',
-  blockExplorer: {
-    name: 'BaseScan',
-    generateContractUrl: (contractAddress: string) => `https://basescan.org/address/${contractAddress}`,
-    generateTransactionUrl: (transactionAddress: string) => `https://basescan.org/tx/${transactionAddress}`,
-  },
-}
+
+
 
 /*
  * Polygon

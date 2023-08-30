@@ -406,8 +406,8 @@
       ]
     },
     "/mnt/c/Users/Asus/Desktop/dapp haslips funzionante e modificata/nft-erc721-collection-2.4.5/smart-contract/contracts/OptimusDogs.sol": {
-      "lastModificationDate": 1691083488042,
-      "contentHash": "5db64d12a9386342783fb7177b394612",
+      "lastModificationDate": 1693126820751,
+      "contentHash": "9fb80720f07793f0cef63ec25db19657",
       "sourceName": "contracts/OptimusDogs.sol",
       "solcConfig": {
         "version": "0.8.20",
